@@ -7,7 +7,7 @@ conf.setMaster("local")
 sc = SparkContext(conf=conf)
 
 # Carregar o dataset como um RDD
-rdd = sc.textFile("caminho/do/seu/arquivo/dataset.csv")
+rdd = sc.textFile("https://raw.githubusercontent.com/FlavioLux/Maiores_Salarios/main/salarios.csv")
 
 # Remover linhas duplicadas
 rdd_sem_duplicatas = rdd.distinct()
